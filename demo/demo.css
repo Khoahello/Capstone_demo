@@ -151,12 +151,11 @@ header .nav-link:hover::before {
   }
   #switchButton {
     background-color: white;
-    border: 1px solid black;
   }
-  #switchButton .fa-sun {
+  #switchButton .gg-sun {
     display: none;
   }
-  #switchButton .fa-moon {
+  #switchButton .gg-moon {
     display: block;
   }
   
@@ -164,15 +163,16 @@ header .nav-link:hover::before {
   .dark#myBody {
     background-color: black;
   }
+  
   .dark #switchButton {
     background-color: black;
-    border: 1px solid white;
   }
-  .dark #switchButton .fa-sun {
+
+  .dark #switchButton .gg-sun {
     display: block;
     color: white;
   }
   
-  .dark #switchButton .fa-moon {
+  .dark #switchButton .gg-moon {
     display: none;
   }
