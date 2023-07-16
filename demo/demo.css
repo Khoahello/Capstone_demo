@@ -130,21 +130,25 @@ header .nav-link:hover::before {
 }
 
 .dark .header__button button {
+    font-weight: 800;
     background-color: black;
 }
 
 .header__button button:hover {
-    /* color: white; */
+    color: white;
     background-color: #dc4f72;
 }
 
-.btn-lg:not(:disabled):not(.disabled):active:focus,
+/* .btn-lg:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 .2rem rgba(220,79,114, 0.5)
+} */
+
+.header__sunmoon {
+    width: 40px;
 }
 
-/* dark theme */
 /* Light theme */
 #myBody {
     background-color: white;
@@ -163,7 +167,7 @@ header .nav-link:hover::before {
   .dark#myBody {
     background-color: black;
   }
-  
+
   .dark #switchButton {
     background-color: black;
   }
@@ -176,3 +180,7 @@ header .nav-link:hover::before {
   .dark #switchButton .gg-moon {
     display: none;
   }
+
+  /* .header__sunmoon i:active {
+    box-shadow: none;
+  } */
