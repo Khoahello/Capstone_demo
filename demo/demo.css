@@ -34,14 +34,12 @@ header {
     height: 100%;
 }
 
-header .nav-link,
-.navbar-brand {
+header .nav-link {
     color: black;
     position: relative;
 }
 
-.dark header .nav-link,
-.dark .navbar-brand {
+.dark header .nav-link {
     color: white;
 }
 
@@ -82,18 +80,27 @@ header .nav-link:hover::before {
     width: 20px;
 }
 
-.dropdown-menu,
-.dropdown-menu a:hover {
-    background-color: black;
+.dropdown-menu a {
+    color: black;
 }
 
-.dropdown-menu a {
+.dropdown-menu,
+.dropdown-menu a:hover {
+    background-color: white;
     color: black;
 }
 
 .dark .dropdown-menu a {
     color: white;
 }
+
+.dark .dropdown-menu,
+.dark .dropdown-menu a:hover {
+    background-color: black;
+    color: white;
+}
+
+
 
 .header__search a {
     width: 40px;
