@@ -80,6 +80,15 @@ header .nav-link:hover::before {
     width: 20px;
 }
 
+.dropdown-menu {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.dropdown-menu {
+    border: 1px solid #B7B7B7;
+}
+
 .dropdown-menu a {
     color: black;
 }
@@ -88,6 +97,10 @@ header .nav-link:hover::before {
 .dropdown-menu a:hover {
     background-color: white;
     color: black;
+}
+
+.dark .dropdown-menu {
+    border: 1px solid #5f5858;
 }
 
 .dark .dropdown-menu a {
