@@ -6,6 +6,7 @@ html, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: all 0.5s;
 }
 
 /* start header */
@@ -142,15 +143,19 @@ header .nav-link:hover::before {
 .header__button button {
     width: 200px;
     height: 50px;
+    font-weight: 800;
     border: 1px solid #dc4f72;
     color: #dc4f72;
     background-color: white;
     outline: none;
-    transition: 0.5s;
+    /* transition: 0.5s; */
+}
+
+.header__button button:focus {
+    box-shadow: 0 0 0 .2rem rgba(245, 95, 140, 0.421)
 }
 
 .dark .header__button button {
-    font-weight: 800;
     background-color: black;
 }
 
@@ -159,48 +164,42 @@ header .nav-link:hover::before {
     background-color: #dc4f72;
 }
 
-/* .btn-lg:not(:disabled):not(.disabled):active:focus,
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgba(220,79,114, 0.5)
-} */
-
 .header__sunmoon {
     width: 40px;
+}
+
+.header__sunmoon button:focus {
+    box-shadow: none;
 }
 
 /* Light theme */
 #myBody {
     background-color: white;
-  }
-  #switchButton {
+}
+#switchButton {
     background-color: white;
-  }
-  #switchButton .gg-sun {
+}
+#switchButton .gg-sun {
     display: none;
-  }
-  #switchButton .gg-moon {
+}
+#switchButton .gg-moon {
     display: block;
-  }
+}
   
   /* Dark Theme*/
-  .dark#myBody {
+.dark#myBody {
     background-color: black;
-  }
+}
 
-  .dark #switchButton {
+.dark #switchButton {
     background-color: black;
-  }
+}
 
-  .dark #switchButton .gg-sun {
+.dark #switchButton .gg-sun {
     display: block;
     color: white;
-  }
+}
   
-  .dark #switchButton .gg-moon {
+.dark #switchButton .gg-moon {
     display: none;
-  }
-
-  /* .header__sunmoon i:active {
-    box-shadow: none;
-  } */
+}
